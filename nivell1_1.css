@@ -96,28 +96,3 @@
     background: yellow;
     margin: 0;
 }
-@media (max-width: 768px) {
-    .fila1, .fila2 {
-        flex-direction: column;
-    }
-
-    .columna {
-        margin: 5px 0;
-    }
-
-    .contenido {
-        flex-direction: column;
-    }
-
-    .articles {
-        grid-template-columns: 1fr;
-    }
-
-    .cajapublicidad {
-        flex-direction: column;
-    }
-
-    .publicidad {
-        width: 100%;
-    }
-}
