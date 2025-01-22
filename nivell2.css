@@ -97,7 +97,11 @@
     margin: 0;
 }
 
+
 @media (max-width: 768px) {
+    body {
+        background-color: tomato;
+    }
     .fila1, .fila2 {
         flex-direction: column;
     }
@@ -120,6 +124,9 @@
 }
 
 @media (max-width: 480px) {
+    body {
+        background-color: lime;
+    }
     .fila1, .fila2, .contenido {
         flex-direction: column;
         align-items: stretch;

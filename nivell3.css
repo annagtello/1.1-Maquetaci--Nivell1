@@ -17,7 +17,6 @@
     padding: 10px;
     flex: 1;
     margin: 0 5px;
-    
 }
 
 .colcentral {
@@ -39,7 +38,7 @@
     font-size: 1.5em;
 }
 
-/* Contenido Principal */
+
 .contenido {
     display: flex;
     justify-content: space-between;
@@ -59,7 +58,6 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 10px;
-    padding: 0px 30px 0px 10px;
 }
 
 .article {
@@ -86,7 +84,7 @@
     margin: 5px;
     width: 100%;
 }
-/* Pie de Página */
+
 .bloque3 {
     background: black;
     margin:10px;
@@ -99,7 +97,50 @@
     margin: 0;
 }
 
+.columna:first-child:hover {
+    animation: aumentar 0.5s forwards; 
+}
+
+@keyframes aumentar {
+    0% {
+        transform: scale(1); 
+    }
+    100% {
+        transform: scale(1.2); 
+        background-color: lightcoral; 
+    }
+}
+
+
+@media (max-width: 768px) {
+    body {
+        background-color: tomato;
+    }
+    .fila1, .fila2 {
+        flex-direction: column;
+    }
+
+    .columna {
+        margin: 5px 0;
+    }
+
+    .contenido {
+        flex-direction: column;
+    }
+
+    .cajapublicidad {
+        flex-direction: column;
+    }
+
+    .publicidad {
+        width: 100%;
+    }
+}
+
 @media (max-width: 480px) {
+    body {
+        background-color: lime;
+    }
     .fila1, .fila2, .contenido {
         flex-direction: column;
         align-items: stretch;
@@ -108,7 +149,7 @@
 
     .columna, .colcentral {
         margin: 5px 0;
-        flex: none; /* Para evitar tamaños automáticos */
+        flex: none; 
         width: 100%;
         
     }
@@ -119,11 +160,11 @@
     }
 
     .articles {
-        grid-template-columns: 1fr; /* Una sola columna */
+        grid-template-columns: 1fr; 
     }
 
     .article {
-        width: 100%; /* Asegura que ocupen todo el ancho */
+        width: 100%; 
         margin: 5px 0px;
      
     }
